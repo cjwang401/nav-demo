@@ -19,6 +19,7 @@ kbd > button{
     right: 0;
     bottom: 0;
     display: none;
+    
 
 }
 kbd:hover > button{
@@ -26,18 +27,63 @@ kbd:hover > button{
 }
 
 
+body{
+    background: red url(./wall-min.jpg) no-repeat center center;
+    background-size: cover;
 
+}
 main{
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrapper{
+    background: rgb(255, 255, 255, 0.2);
+    border-radius: 10px;
 }
 #zhangsan{
     display: inline-block;
 }
 #zhangsan > div:nth-child(2){
-    margin-left: 1em;
+    margin-left: -22px;
 }
 #zhangsan > div:nth-child(3){
-    margin-left: 2em;
+    margin-left: -88px;
+}
+
+.key{
+    width: 50px;
+    height: 40px;
+    background: linear-gradient(to bottom, #292929 0%,#111111 100%); 
+    border: 1px solid #1a1b1c;
+    color: #c5c5c5;
+    border-radius: 7px;
+    box-shadow: 0 0 0px 1px #1a1b1c, 0 0 0 2px #1f2020, 0 3px 0 2px #080808;
+    font-size: 17px;
+    font-family: helvetica;
+    position: relative;
+}
+.row{
+    margin: 20px;
+}
+.row .key{
+    margin: 0 16px;
+}
+.key img{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 4px;
+    bottom: 2px;
+
+}
+.key .text{
+    position: absolute;
+    left: 2px;
+    top: 1px;
 }
 
 
